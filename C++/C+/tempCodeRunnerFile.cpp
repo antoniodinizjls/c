@@ -1,0 +1,1 @@
+z = (int **) malloc(linhas * sizeof(int *));

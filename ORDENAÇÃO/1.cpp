@@ -3,17 +3,19 @@
 
 
 int main() {
-    
-    int matriz[5] =  {1,2,5,3,4};
+    int matriz[5] = {1,4,3,5,2}; 
+    // int matriz[5] =  {1,2,5,3,4};
     int  i = 0, j = 0, atual = 0;
     int tamanho  = sizeof(matriz)/ sizeof(matriz[0]);
     double inicio = clock();
 
     for (i = 0; i < tamanho; i++){
 
-        atual = matriz[i];
+        atual = matriz[i]; // seta o elemento
         j = i - 1; //elemento anterior
         while((j >= 0) && atual < matriz[j] ){
+         // se elemento j for maior ou igual a zero e o da frente menor que o de tras
+         // Inverte
             matriz[i] = matriz[j];
             --j;
         }

@@ -4,7 +4,7 @@ int main(){
     float altura = 0, peso = 0;
     float imc = 0;
 
-    printf("Digite a altura e idade de uma pessoa \n");
+    printf("Digite a altura e peso de uma pessoa \n");
     scanf("%f %f",&altura, &peso);
 
     imc  = peso / (altura*altura);
